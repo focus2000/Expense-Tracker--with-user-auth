@@ -10,7 +10,8 @@
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix clients && npm run build --prefix clients",
     "server": "nodemon server",
     "client": "npm start --prefix clients",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "dev:dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Kenneth Nwachukwu",
   "license": "ISC",
