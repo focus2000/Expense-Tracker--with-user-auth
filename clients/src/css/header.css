@@ -1,0 +1,33 @@
+#header{
+    display:flex;
+    background-color:purple;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#header .title{
+    margin:0;
+    color:#ffffffff;
+    padding:0 1rem
+   
+    
+}
+
+
+#header .auth-options button{
+    color:white;
+    padding: 0 1rem;
+    font-size:1rem
+
+}
+
+#header .auth-options {
+    display:flex;
+    height:100%
+}
+
+@media screen and (max-width:360px){
+    #header .title {
+        font-size:1.2rem
+    }
+}

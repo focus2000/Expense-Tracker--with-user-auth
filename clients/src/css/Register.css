@@ -1,0 +1,49 @@
+.container {
+    max-width:900px;
+    margin:0 auto;
+}
+
+.page {
+    padding:1rem;
+    
+}
+
+.form label,
+.form input {
+    display:block
+}
+
+.form input {
+    margin-bottom:1rem;
+}
+.form label {
+    margin-bottom:0.2rem
+}
+
+.form input[type = "text"],
+.form input[type= "email"],
+.form input[type = "password"]{
+    width:100%;
+    font-size:1.1rem;
+    padding:0.3rem;
+    border:1px solid #c2c2c2;
+    background:#f0f0f0;
+    border-radius:10px
+}
+
+.form input:focus {
+    outline:none;
+    border:1px solid purple;
+    box-shadow:inset 0px 0px 5px rgba(38, 142, 228, 0.5);
+    outline:none
+}
+
+.form input[type = "submit"]{
+    background-color:purple;
+    border:1px solid blue;
+    padding:0.4rem 2rem;
+    font-size:1.1rem;
+    color:white;
+    border-radius:8px;
+    margin-top:0.2rem
+}
