@@ -26,8 +26,8 @@ const Register = () => {
         e.preventDefault();
        try {
         const newUser = {email, password, passwordCheck, displayName};
-        await Axios.post("http://localhost:5000/users/register", newUser);
-       const loginRes = await Axios.post("http://localhost:5000/users/login",{
+        await Axios.post("https://mernstackexpensetracker.herokuapp.com/users/register", newUser);
+       const loginRes = await Axios.post("https://mernstackexpensetracker.herokuapp.com/users/login",{
            email,
            password
        });
