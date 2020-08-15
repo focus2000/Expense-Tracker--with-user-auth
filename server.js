@@ -28,8 +28,8 @@ app.use('/api/v1/transactions', transactions);
 app.use('/users',  require('./routes/user'));
 
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
-    app.get('*', (req, res) =>res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')));
+    app.use(express.static('clients/build'));
+    app.get('*', (req, res) =>res.sendFile(path.resolve(__dirname, 'clients', 'build', 'index.html')));
 }
 
 
